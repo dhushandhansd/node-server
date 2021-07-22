@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainContainer {
+    width: 200px;
+    height: 100px;
+    color: white;
+    background-color: black;
+}
