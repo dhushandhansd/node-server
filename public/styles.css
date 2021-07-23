@@ -22,6 +22,7 @@ a, li, button {
     text-decoration: none;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -81,9 +82,28 @@ button:hover {
     margin-top: 20px;
 }
 
+.followUsTitle{
+    margin-left: 10%;
+    padding-bottom: 2%;
+    font-size: 1.6em;
+}
+
 .socialIcons {
     display: inline-block;
     margin-left: 10%;
+    font-size: 30px;
+}
+
+.fa-facebook {
+    color: rgb(45, 45, 221);
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-discord {
+    color: #5865F2;
 }
 
 .bodyImage {

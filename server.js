@@ -29,12 +29,21 @@ const webServer = http.createServer((req,res) => {
         let jpgStream = fs.createReadStream(jpgPath)
         res.writeHead(200, {'content-type':'image/jpg'})
         jpgStream.pipe(res)
+
     }else if(req.url.match('\.png')) {
         let jpgPath = path.join(__dirname, req.url)
         let jpgStream = fs.createReadStream(jpgPath)
         res.writeHead(200, {'content-type':'image/png'})
         jpgStream.pipe(res)
+    
+    } else if (req.url == '/login.html') {
+        let loginPath = path.join(__dirname, 'public', req.url)
+        let loginSteram = fs.createReadStream(loginPath, 'UTF-8')
+        res.writeHead(200, {'content-type':'text/html'})
+        loginSteram.pipe(res)
     }
+
+    
     
     // let filePath = path.join(__dirname,'public',req.url)
 
