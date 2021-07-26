@@ -70,6 +70,11 @@ form button {
     margin-left: 47%;
 }
 
+#emailNotify {
+    font-size: 10px;
+    margin-left: 30%;
+}
+
 .returnHomeLink {
     position: absolute;
     color: black;

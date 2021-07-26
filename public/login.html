@@ -12,12 +12,12 @@
         <div class="loginContainer">
             <a class="returnHomeLink" href="/">Home</a>
             <div class="formContainer">
-                <form action="#">
+                <form>
                     <h2>NOTE UP</h2>
-                    <input type="email" placeholder="Email Address">
-                    <input type="password" placeholder="Password">
-                    <button type="submit">Login</button>
-                    <a class="forgotPassword" href="#">Forgot Password ?</a>
+                    <input id="emailInput" type="email" placeholder="Email Address">
+                    <input id="passwordInput" type="password" placeholder="Password">
+                    <button id="loginButton">Login</button>
+                    <a id="forgotPassword" class="forgotPassword" href="#">Forgot Password ?</a>
                 </form>
             </div>
             <div class="imageContainer">
@@ -25,5 +25,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./javascripts/login.js"></script>
 </body>
 </html>
